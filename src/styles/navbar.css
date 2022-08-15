@@ -4,15 +4,15 @@
 	align-items: center;
 	height: 60px;
 	width: 100%;
-	padding: 0.5rem 0rem;
-	background-color: #fff;
-	color: black;
-	box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+	padding: 0.5rem 1rem;
+	background-color: black;
+	color: white;
+	box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.158);
 }
 
 .brand-name {
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-size: 1.3rem;
 	margin-left: 1rem;
 }
@@ -32,6 +32,7 @@
 }
 
 .navigation-menu li a {
+	color: white;
 	text-decoration: none;
 	display: block;
 	width: 100%;
@@ -43,19 +44,55 @@
 	width: 40px;
 	padding: 0.5rem;
 	border-radius: 50%;
-	background-color: #283b8b;
+	background-image: linear-gradient(
+		to right,
+		#63d9a0 0%,
+
+		#8f3ad4 50%,
+		#63d9a0 100%
+	);
+	background-size: 300% auto;
 	cursor: pointer;
-	transition: background-color 0.2s ease-in-out;
 	position: absolute;
 	top: 50%;
 	right: 25px;
 	transform: translateY(-50%);
 	display: none;
+	transition: 0.5s;
 }
 
 .hamburger:hover {
-	background-color: #2642af;
+	background-position: right center;
 }
+/* .loginpage button {
+	background-image: linear-gradient(
+		to right,
+		#63d9a0 0%,
+		#9e0de7 50%,
+		#63d9a0 100%
+	);
+
+	background-size: 200% auto;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0px 3px 4px rgb(165, 165, 165);
+
+	display: block;
+	line-height: 5px;
+	margin: 5% 0;
+	text-align: center;
+	transition: 0.5s;
+	width: 100%;
+	-webkit-transition: 0.5s;
+}
+.loginpage button:hover {
+	background-position: right center;
+}
+.loginpage button:active {
+	transition: 0.1s;
+	box-shadow: 0px 1px 2px rgb(160, 160, 160);
+	transform: translateY(2px);
+} */
 
 @media screen and (max-width: 550px) {
 	.hamburger {
@@ -70,7 +107,7 @@
 		width: 100%;
 		height: calc(100vh - 60px);
 		background-color: white;
-		border-top: 1px solid black;
+		/* border-top: 1px solid white; */
 		display: none;
 	}
 
@@ -80,16 +117,34 @@
 	}
 
 	.navigation-menu li a {
-		color: black;
+		color: white;
 		width: 100%;
 		padding: 1.5rem 0;
 	}
 
 	.navigation-menu li:hover {
-		background-color: #eee;
+		background: -webkit-linear-gradient(
+			top left,
+			#63d9a0 0%,
+
+			#8f3ad4 50%,
+			#63d9a0 100%
+		);
+	}
+
+	.navigation-menu li:active {
+		background: -webkit-linear-gradient(
+			top left,
+			#63d9a0 0%,
+
+			#8f3ad4 50%,
+			#63d9a0 100%
+		);
 	}
 
 	.navigation-menu.expanded ul {
+		max-height: fit-content;
+		background-color: black;
 		display: block;
 	}
 }
