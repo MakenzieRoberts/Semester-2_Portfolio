@@ -1,13 +1,18 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "../styles/navbar.css";
 
 export default function Navbar() {
 	const [isNavExpanded, setIsNavExpanded] = useState(false);
 
+	const closeMenu = (e) => {
+		setIsNavExpanded(!isNavExpanded);
+		e.preventDefault();
+	};
 	return (
 		<nav className="navigation">
 			<a href="/" className="brand-name">
-				MacroSoft
+				Makenzie Roberts
 			</a>
 			<button
 				className="hamburger"
@@ -15,7 +20,6 @@ export default function Navbar() {
 					setIsNavExpanded(!isNavExpanded);
 				}}
 			>
-				{/* icon from Heroicons.com */}
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					className="h-5 w-5"
@@ -34,15 +38,15 @@ export default function Navbar() {
 					isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
 				}
 			>
-				<ul>
+				<ul onClick={closeMenu}>
 					<li>
-						<a href="/home">Home</a>
+						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<a href="/about">About</a>
+						<Link to="/about">About</Link>
 					</li>
 					<li>
-						<a href="/contact">Contact</a>
+						<Link to="/contact">Contact</Link>
 					</li>
 				</ul>
 			</div>
