@@ -1,5 +1,13 @@
+/* position: -webkit-sticky;
+position: sticky;
+top: 0; */
 .navigation {
-	position: relative;
+	position: sticky;
+	top: 0;
+}
+/* !REFERENCE: https://blog.logrocket.com/create-responsive-navbar-react-css/ */
+#nav-container {
+	position: absolute; /*!REMEMBER: I changed this*/
 	display: flex;
 	align-items: center;
 	height: 60px;
