@@ -1,0 +1,63 @@
+.home {
+	font-size: 2rem;
+	background: black;
+	padding-top: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+}
+
+.typewriter {
+	position: absolute;
+	transform: translateY(-100px);
+}
+/* 
+Typewriter effect by Temani Afif
+https://codepen.io/t_afif/pen/ExXyXpB 
+*/
+
+.type {
+	/* 
+    Typewriter effect by Temani Afif
+    https://codepen.io/t_afif/pen/ExXyXpB 
+    */
+	color: #0000;
+	background: linear-gradient(-90deg, #ffffff 5px, #0000 0) 10px 0,
+		linear-gradient(#ffffff 0 0) 0 0;
+	background-size: calc(var(--n) * 1ch) 200%;
+	-webkit-background-clip: padding-box, text;
+	background-clip: padding-box, text;
+	background-repeat: no-repeat;
+	animation: b 0.7s infinite steps(1),
+		t calc(var(--n) * 0.1s) steps(var(--n)) forwards;
+}
+
+@keyframes t {
+	/* 
+    Typewriter effect by Temani Afif
+    https://codepen.io/t_afif/pen/ExXyXpB 
+    */
+	from {
+		background-size: 0 200%;
+	}
+}
+@keyframes b {
+	/* 
+    Typewriter effect by Temani Afif
+    https://codepen.io/t_afif/pen/ExXyXpB 
+    */
+	50% {
+		background-position: 0 -100%, 0 0;
+	}
+}
+
+/* 
+Typewriter effect by Temani Afif
+https://codepen.io/t_afif/pen/ExXyXpB 
+*/
+#test {
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+		0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
