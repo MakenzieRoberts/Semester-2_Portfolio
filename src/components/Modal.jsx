@@ -35,12 +35,16 @@ export default function Modal(props) {
 				<div className="modal">
 					<div onClick={toggleModal} className="overlay"></div>
 					<div className="modal-content">
-						<img width={fullWidth} height={fullHeight} src={image} alt="" />
+						<img
+							width={fullWidth}
+							height={fullHeight}
+							src={image}
+							alt="Modal image"
+						/>
 
 						<button className="close-modal" onClick={toggleModal}>
 							<span className="close-text" aria-label="Back Button">
 								<span>X</span>
-								{/*⇦ */}
 							</span>
 						</button>
 					</div>
