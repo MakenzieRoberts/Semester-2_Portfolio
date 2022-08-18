@@ -1,63 +1,151 @@
 .home {
-	font-size: 2rem;
-	background: black;
-	padding-top: 5em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+	scroll-behavior: smooth;
+	position: relative;
+}
+#main-text {
+	margin: 0 auto;
+	padding: 20px;
+}
+h2,
+p {
 	text-align: center;
 }
-
-.typewriter {
-	position: absolute;
-	transform: translateY(-100px);
+h2 {
+	font-size: 3rem;
+	margin: 20px;
 }
-/* 
-Typewriter effect by Temani Afif
-https://codepen.io/t_afif/pen/ExXyXpB 
-*/
+/* ********************************* Splash ********************************* */
+/* #splash {
+	position: relative;
+}
+#splash .arrow img {
+	border-radius: 50%;
+	animation: fadeIn3 5s;
+	-webkit-animation: fadeIn3 5s;
+	-webkit-animation: fadein3 5s; 
+	-moz-animation: fadein3 5s; 
+	-ms-animation: fadein3 5s; 
+	-o-animation: fadein3 5s; 
+}
+@keyframes fadein3 {
+	0% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+} */
 
-.type {
-	/* 
-    Typewriter effect by Temani Afif
-    https://codepen.io/t_afif/pen/ExXyXpB 
-    */
-	color: #0000;
-	background: linear-gradient(-90deg, #ffffff 5px, #0000 0) 10px 0,
-		linear-gradient(#ffffff 0 0) 0 0;
-	background-size: calc(var(--n) * 1ch) 200%;
-	-webkit-background-clip: padding-box, text;
-	background-clip: padding-box, text;
-	background-repeat: no-repeat;
-	animation: b 0.7s infinite steps(1),
-		t calc(var(--n) * 0.1s) steps(var(--n)) forwards;
+/* ******************************** Sections ******************************** */
+
+.section {
+	min-height: 90vh;
+	position: relative;
 }
 
-@keyframes t {
-	/* 
-    Typewriter effect by Temani Afif
-    https://codepen.io/t_afif/pen/ExXyXpB 
-    */
-	from {
-		background-size: 0 200%;
+/* ******************************** Section 1 ******************************* */
+#section1 {
+	/* border: 2px solid red; */
+	display: flex;
+	flex-direction: column;
+
+	margin: 0 auto;
+
+	/* height: 90vh; */
+}
+#section1 p {
+	font-size: 1rem;
+	color: grey;
+}
+#image-grid-container {
+	margin: auto;
+	/* border: 2px solid red; */
+	width: fit-content;
+}
+
+#image-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/* border: 2px solid blue; */
+}
+#image-grid img {
+	/* border: 2px solid lime; */
+	margin: auto;
+}
+@media only screen and (max-width: 900px) {
+	#image-grid {
+		grid-template-columns: 1fr 0.7fr 1fr;
+	}
+	#image-grid img {
+		width: 100%;
+		height: auto;
 	}
 }
-@keyframes b {
-	/* 
-    Typewriter effect by Temani Afif
-    https://codepen.io/t_afif/pen/ExXyXpB 
-    */
-	50% {
-		background-position: 0 -100%, 0 0;
+
+#image-grid .thumb-img:hover {
+	scale: 1.05;
+	cursor: pointer;
+}
+/* ******************************** Section 2 ******************************* */
+#section2 {
+	min-height: 90vh;
+	max-height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+@media only screen and (max-width: 900px) {
+	#section2 .arrow {
+		position: static;
 	}
 }
+#section2-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 900px) {
+	#section2-content {
+		grid-template-columns: 1fr;
+	}
+}
+#section2-content div {
+	margin: 0 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#section2 h2 {
+	height: 15%;
+	max-width: 40rem;
+}
+@media only screen and (max-width: 900px) {
+	#section2 h2 {
+		font-size: 2rem;
+		margin: 0;
+	}
+}
+iframe {
+	margin: 20px;
+	padding: 5px;
+	border: 2px solid black;
+}
+@media only screen and (max-width: 900px) {
+	iframe {
+		height: 300px;
+		width: 90vw;
+		scale: 0.8;
+	}
+}
+/* ******************************** Section 3 ******************************* */
+#section3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
-/* 
-Typewriter effect by Temani Afif
-https://codepen.io/t_afif/pen/ExXyXpB 
-*/
-#test {
-	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
-		0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+#section3-content {
+	margin: auto;
 }

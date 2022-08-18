@@ -1,0 +1,75 @@
+.splash {
+	font-size: 2rem;
+	background: white;
+	padding-top: 9em;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+}
+.fade {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.fade h2 {
+	animation: fadeIn 2s;
+	-webkit-animation: fadeIn 2s;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s; /* Firefox < 16 */
+	-ms-animation: fadein 2s; /* Internet Explorer */
+	-o-animation: fadein 2s; /* Opera < 12.1 */
+	animation: fadein 2s;
+}
+.fade p {
+	animation: fadeIn2 5s;
+	-webkit-animation: fadeIn2 5s;
+	-webkit-animation: fadein2 5s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein2 5s; /* Firefox < 16 */
+	-ms-animation: fadein2 5s; /* Internet Explorer */
+	-o-animation: fadein2 5s; /* Opera < 12.1 */
+}
+
+.fade img {
+	border-radius: 50%;
+	animation: fadeIn3 5s;
+	-webkit-animation: fadeIn3 5s;
+	-webkit-animation: fadein3 5s;
+	-moz-animation: fadein3 5s;
+	-ms-animation: fadein3 5s;
+	-o-animation: fadein3 5s;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadein2 {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadein3 {
+	0% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
