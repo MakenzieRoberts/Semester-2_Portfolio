@@ -141,9 +141,12 @@ iframe {
 	margin: 20px;
 }
 
+/* ******************************** Section 4 ******************************* */
+
 #section4 h2 {
 	font-size: 4rem;
 }
+
 /* **************************** Section 1 @media **************************** */
 
 @media only screen and (max-width: 900px) {
