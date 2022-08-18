@@ -1,8 +1,7 @@
 import { useState } from "react";
-
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import "../styles/navbar.css";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import "../styles/navbar.css";
 
 export default function Navbar() {
 	const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -12,7 +11,6 @@ export default function Navbar() {
 		e.preventDefault();
 	};
 	return (
-		//!REFERENCE: https://blog.logrocket.com/create-responsive-navbar-react-css/
 		<nav className="navigation">
 			<div id="nav-container">
 				<a href="/" className="name">
@@ -52,7 +50,7 @@ export default function Navbar() {
 									spy={true}
 									smooth={true}
 									offset={-100}
-									duration={900}
+									duration={1100}
 								>
 									Digital Art
 								</ScrollLink>
@@ -67,7 +65,7 @@ export default function Navbar() {
 									spy={true}
 									smooth={true}
 									offset={-100}
-									duration={900}
+									duration={1100}
 								>
 									UI/UX Design
 								</ScrollLink>
@@ -76,12 +74,13 @@ export default function Navbar() {
 						<li>
 							<Link to="/">
 								<ScrollLink
+									onClick={closeMenu}
 									activeClass="active"
 									to="section3"
 									spy={true}
 									smooth={true}
 									offset={-100}
-									duration={900}
+									duration={1100}
 								>
 									{"< "}Coding{" >"}
 								</ScrollLink>
@@ -90,12 +89,28 @@ export default function Navbar() {
 						<li>
 							<Link to="/">
 								<ScrollLink
+									onClick={closeMenu}
+									activeClass="active"
+									to="section4"
+									spy={true}
+									smooth={true}
+									offset={-100}
+									duration={1100}
+								>
+									Contact
+								</ScrollLink>
+							</Link>
+						</li>
+						<li>
+							<Link to="/">
+								<ScrollLink
+									onClick={closeMenu}
 									activeClass="active"
 									to="splash"
 									spy={true}
 									smooth={true}
 									offset={-100}
-									duration={900}
+									duration={1500}
 								>
 									Top ^
 								</ScrollLink>

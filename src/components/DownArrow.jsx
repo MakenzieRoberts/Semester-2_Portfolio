@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import downArrow from "../images/down-arrow.png";
 import "../styles/downarrow.css";
+
 const DownArrow = (props) => {
 	const section = props.sectionId;
 	return (
@@ -12,7 +13,7 @@ const DownArrow = (props) => {
 				spy={true}
 				smooth={true}
 				offset={-100}
-				duration={900}
+				duration={2000}
 			>
 				<img height="100" src={downArrow} alt="Down Arrow" />
 			</Link>

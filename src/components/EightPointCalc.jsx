@@ -1,7 +1,5 @@
 import React from "react";
-
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "../styles/eightpointcalc.css";
 
 const EightPointCalc = () => {
@@ -14,11 +12,8 @@ const EightPointCalc = () => {
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
-		console.log("e.target", e.target);
 
 		setFormValue({ ...formValue, [name]: value });
-
-		console.log(formValue);
 	};
 
 	const handleSubmit = (e) => {
@@ -53,7 +48,7 @@ const EightPointCalc = () => {
 	return (
 		<div className="eight-point-calc">
 			<div id="calc-container">
-				<p>8-Point Grid System Calculator</p>
+				<p style={{ fontWeight: "bold" }}>8-Point Grid System Calculator</p>
 				<form id="eight-point-form" onSubmit={handleSubmit}>
 					<input
 						id="num-input"
@@ -68,7 +63,7 @@ const EightPointCalc = () => {
 					</button>
 				</form>
 				<div id="output-area">
-					<p id="output-text"> {formErrors ? errorMsg : answer}</p>
+					<p id="output-text"> {formErrors ? errorMsg : answer} </p>
 				</div>
 			</div>
 		</div>

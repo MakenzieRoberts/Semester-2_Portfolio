@@ -1,0 +1,89 @@
+.contact {
+	display: flex;
+	justify-content: center;
+	margin: 8% auto;
+	height: 100%;
+	background-color: black;
+	border-radius: 10px;
+	width: fit-content;
+	padding: 2%;
+	color: white;
+}
+
+.contact form {
+	padding: 5% 0;
+	display: flex;
+	flex-direction: column;
+	font-weight: 900;
+	width: 300px;
+	align-items: center;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form label,
+.contact form button {
+	width: 280px;
+	font-size: 1.2rem;
+}
+
+.contact form label {
+	padding-bottom: 1%;
+}
+
+.contact form input,
+.contact form textarea {
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 1% 0;
+	margin: 0 0 5% 0;
+}
+
+.contact form textarea {
+	height: 100px;
+	max-width: 280px;
+	max-height: 200px;
+}
+
+.contact button {
+	color: black;
+	background-color: white;
+	border: 2px solid white;
+}
+
+.contact-invisible {
+	display: none;
+}
+
+.sent-invisible {
+	display: none;
+}
+
+.sent {
+	align-items: center;
+	color: black;
+	display: flex;
+	display: visible;
+	font-size: 3rem;
+	height: 200px;
+	justify-content: center;
+	margin: 14% auto;
+	text-align: center;
+	width: 200px;
+
+	animation: fadeIn 4s;
+	-webkit-animation: fadeIn 4s;
+	-webkit-animation: fadein 4s;
+	-moz-animation: fadein 4s;
+	-ms-animation: fadein 4s;
+	-o-animation: fadein 4s;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

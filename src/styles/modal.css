@@ -4,8 +4,6 @@ body.active-modal {
 
 .modal,
 .overlay {
-	/* width: 100vw;
-	height: 100vh; */
 	top: 0;
 	left: 0;
 	right: 0;
@@ -19,20 +17,16 @@ body.active-modal {
 }
 
 .modal-content {
+	background-color: rgb(235, 235, 235);
 	border-radius: 10px;
 	display: flex;
+	height: fit-content;
+	left: 50%;
+	line-height: 1.4;
 	position: absolute;
 	top: 50%;
-	left: 50%;
 	transform: translate(-50%, -50%);
-	line-height: 1.4;
-	background: #f1f1f1;
-	/* padding: 14px 28px; */
-	/* border-radius: 3px; */
-	/* max-width: fit-content;
-	min-width: 300px; */
 	width: fit-content;
-	height: fit-content;
 	z-index: 2;
 }
 @media only screen and (max-width: 900px) {
@@ -43,22 +37,19 @@ body.active-modal {
 }
 
 .close-modal {
-	cursor: pointer;
-	display: flex;
 	align-items: center;
 	background: rgb(0, 0, 0);
 	border-radius: 10px;
 	border: none;
-	/* border: 5px solid white; */
 	color: white;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-
+	cursor: pointer;
+	display: flex;
 	font-size: 1rem;
 	font-weight: 600;
-	/* margin: 24px; */
 	padding: 0 20px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
 }
 
 .close-text {

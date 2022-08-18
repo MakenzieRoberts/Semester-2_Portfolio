@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import "../styles/modal.css";
-import expand from "../images/expand.png";
-import banana from "../images/banana.png";
 
-import penguin from "../images/penguin.png";
-
-import tv from "../images/tv.png";
 export default function Modal(props) {
 	const image = props.image;
 	const thumbWidth = props.thumbWidth;

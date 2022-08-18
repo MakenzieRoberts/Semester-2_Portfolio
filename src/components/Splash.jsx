@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/splash.css";
 import DownArrow from "./DownArrow";
+import "../styles/splash.css";
 
 const Splash = () => {
 	const bold = { fontWeight: "900" };

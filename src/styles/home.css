@@ -10,71 +10,139 @@ h2,
 p {
 	text-align: center;
 }
+
 h2 {
 	font-size: 3rem;
 	margin: 20px;
 }
-/* ********************************* Splash ********************************* */
-/* #splash {
-	position: relative;
-}
-#splash .arrow img {
-	border-radius: 50%;
-	animation: fadeIn3 5s;
-	-webkit-animation: fadeIn3 5s;
-	-webkit-animation: fadein3 5s; 
-	-moz-animation: fadein3 5s; 
-	-ms-animation: fadein3 5s; 
-	-o-animation: fadein3 5s; 
-}
-@keyframes fadein3 {
-	0% {
-		opacity: 0;
-	}
-	70% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-} */
 
 /* ******************************** Sections ******************************** */
 
 .section {
-	min-height: 90vh;
+	min-height: 100vh;
 	position: relative;
 }
 
 /* ******************************** Section 1 ******************************* */
+
 #section1 {
-	/* border: 2px solid red; */
 	display: flex;
 	flex-direction: column;
-
 	margin: 0 auto;
-
-	/* height: 90vh; */
 }
+
 #section1 p {
 	font-size: 1rem;
 	color: grey;
 }
+
 #image-grid-container {
-	margin: auto;
-	/* border: 2px solid red; */
+	margin: 5% auto;
 	width: fit-content;
 }
 
 #image-grid {
+	margin: 0 auto;
+
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	/* border: 2px solid blue; */
 }
+
 #image-grid img {
-	/* border: 2px solid lime; */
 	margin: auto;
 }
+
+#image-grid .thumb-img:hover {
+	scale: 1.05;
+	cursor: pointer;
+}
+
+/* ******************************** Section 2 ******************************* */
+
+#section2 {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	max-height: fit-content;
+}
+
+#section2-content {
+	display: grid;
+	grid-template-columns: 1fr 0.1fr 1fr;
+}
+
+#section2-content div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#section2 h2 {
+	height: 15%;
+	max-width: 40rem;
+}
+
+iframe {
+	background-color: black;
+	margin: 20px;
+
+	border: 6px solid black;
+}
+
+/* ******************************** Section 3 ******************************* */
+
+#section3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	letter-spacing: 0.5px;
+}
+
+#section3-content {
+	width: fit-content;
+}
+
+#section3 h3 {
+	font-size: 1.5rem;
+}
+
+#section3 p,
+#section3 h3 {
+	color: white;
+}
+
+#section3 > p {
+	padding-bottom: 10px;
+	color: black;
+}
+#section3 .arrow {
+	position: relative;
+}
+
+#github {
+	background-color: black;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin: 2.5% auto;
+	padding: 2.5%;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	width: 84%;
+}
+
+.calc #github img:hover {
+	scale: 1.05;
+}
+
+#github > h3 {
+	text-align: left;
+	margin: 20px;
+}
+
+/* **************************** Section 1 @media **************************** */
+
 @media only screen and (max-width: 900px) {
 	#image-grid {
 		grid-template-columns: 1fr 0.7fr 1fr;
@@ -85,67 +153,39 @@ h2 {
 	}
 }
 
-#image-grid .thumb-img:hover {
-	scale: 1.05;
-	cursor: pointer;
-}
-/* ******************************** Section 2 ******************************* */
-#section2 {
-	min-height: 90vh;
-	max-height: fit-content;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+/* **************************** Section 2 @media **************************** */
+
 @media only screen and (max-width: 900px) {
 	#section2 .arrow {
 		position: static;
 	}
 }
-#section2-content {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
+
 @media only screen and (max-width: 900px) {
 	#section2-content {
 		grid-template-columns: 1fr;
 	}
 }
-#section2-content div {
-	margin: 0 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-#section2 h2 {
-	height: 15%;
-	max-width: 40rem;
-}
+
 @media only screen and (max-width: 900px) {
 	#section2 h2 {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		margin: 0;
 	}
 }
-iframe {
-	margin: 20px;
-	padding: 5px;
-	border: 2px solid black;
-}
+
 @media only screen and (max-width: 900px) {
 	iframe {
-		height: 300px;
+		height: 400px;
 		width: 90vw;
 		scale: 0.8;
 	}
 }
-/* ******************************** Section 3 ******************************* */
-#section3 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
 
-#section3-content {
-	margin: auto;
+/* **************************** Section 3 @media **************************** */
+
+@media only screen and (max-width: 900px) {
+	#section3-content {
+		width: fit-content;
+	}
 }

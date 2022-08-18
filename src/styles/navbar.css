@@ -1,34 +1,30 @@
-/* position: -webkit-sticky;
-position: sticky;
-top: 0; */
 .navigation {
 	z-index: 1;
+	position: fixed;
 	position: sticky;
+
 	top: 0;
 }
-/* !REFERENCE: https://blog.logrocket.com/create-responsive-navbar-react-css/ */
+
 #nav-container {
-	position: absolute; /*!REMEMBER: I changed this*/
-	display: flex;
 	align-items: center;
-	height: 60px;
-	width: 100%;
-	padding: 0.5rem 1rem 0.5rem 0.5rem;
 	background-color: black;
-	color: white;
 	box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.158);
-
-	/* font-size: 1.3rem; */
-
-	text-transform: uppercase;
+	color: white;
+	display: flex;
 	font-weight: 400;
+	height: 60px;
+	padding: 0.5rem 1rem 0.5rem 0.5rem;
+	position: absolute;
+	text-transform: uppercase;
+	width: 100%;
 }
 
 .name {
-	text-decoration: none;
 	color: white;
 	font-size: 1.3rem;
 	margin-left: 1rem;
+	text-decoration: none;
 }
 @media only screen and (max-width: 900px) {
 	.name {
@@ -51,71 +47,32 @@ top: 0; */
 }
 
 .navigation-menu li a {
+	white-space: nowrap;
 	color: white;
 	text-decoration: none;
 	display: block;
 	width: 100%;
 }
-.navigation-menu li a:hover {
-	/* color: white;*/
-}
 
 .hamburger {
-	border: 0;
-	height: 40px;
-	width: 40px;
-	padding: 0.5rem;
-	border-radius: 50%;
 	background-color: black;
-	/* background-image: linear-gradient(
-		to right,
-		#63d9a0 0%,
-
-		#8f3ad4 50%,
-		#63d9a0 100%
-	);
-	background-size: 300% auto; */
+	border-radius: 50%;
+	border: 0;
 	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	right: 25px;
-	transform: translateY(-50%);
 	display: none;
+	height: 40px;
+	padding: 0.5rem;
+	position: absolute;
+	right: 25px;
+	top: 50%;
+	transform: translateY(-50%);
 	transition: 0.5s;
+	width: 40px;
 }
 
 .hamburger:hover {
 	background-position: right center;
 }
-/* .loginpage button {
-	background-image: linear-gradient(
-		to right,
-		#63d9a0 0%,
-		#9e0de7 50%,
-		#63d9a0 100%
-	);
-
-	background-size: 200% auto;
-	border-radius: 5px;
-	border: none;
-	box-shadow: 0px 3px 4px rgb(165, 165, 165);
-
-	display: block;
-	line-height: 5px;
-	margin: 5% 0;
-	text-align: center;
-	transition: 0.5s;
-	width: 100%;
-	-webkit-transition: 0.5s;
-}
-.loginpage button:hover {
-	background-position: right center;
-}
-.loginpage button:active {
-	transition: 0.1s;
-	box-shadow: 0px 1px 2px rgb(160, 160, 160);
-	transform: translateY(2px);
-} */
 
 @media screen and (max-width: 550px) {
 	.hamburger {
@@ -130,7 +87,6 @@ top: 0; */
 		width: 100%;
 		height: calc(100vh - 60px);
 		background-color: white;
-		/* border-top: 1px solid white; */
 		display: none;
 	}
 
@@ -143,10 +99,6 @@ top: 0; */
 		color: white;
 		width: 100%;
 		padding: 1.5rem 0;
-	}
-
-	.navigation-menu li a:hover {
-		/* color: white; */
 	}
 
 	.navigation-menu.expanded ul {

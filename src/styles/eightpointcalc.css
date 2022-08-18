@@ -1,17 +1,67 @@
-/* .eight-point-calc {
-	margin: auto;
-} */
-
 #calc-container {
-	padding: 92px;
-
-	position: relative;
-	margin: 0 auto;
-	border: 2px solid black;
+	padding-top: 20px;
+	background-color: white;
 	border-radius: 10px;
+	border: 2px solid black;
+	margin: 0 auto;
+
+	min-height: fit-content;
+	position: relative;
+}
+
+#calc-container p {
+	font-size: large;
+	color: black;
+}
+
+#calc-container > p {
+	font-size: 1.5rem;
+}
+
+#calc h3 {
+	text-align: center;
+}
+
+#calc {
+	background-color: black;
+	border: 2px solid rgb(235, 235, 235);
+	border-radius: 10px;
+	margin: 2.5% auto;
+	padding: 2.5%;
+	width: 84%;
+}
+
+#calc p {
+	margin: 16px;
+}
+
+#calc a {
+	color: white;
+	font-size: 110%;
+	margin: 0 1%;
 }
 
 form {
 	display: flex;
 	justify-content: center;
+}
+
+form input {
+	width: 30%;
+}
+
+form input::placeholder {
+	padding: 0 8px;
+}
+
+button {
+	background: black;
+	border-radius: 4px;
+	color: white;
+	padding: 4px;
+	margin: 0 2px;
+}
+
+#output-text {
+	font-size: 1.4rem !important;
 }
