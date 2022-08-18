@@ -1,13 +1,4 @@
 # Semester 2: Portfolio Project
- 
-
-## Navigation Bar Reference: 
-
-[Tutorial](https://blog.logrocket.com/create-responsive-navbar-react-css/)
-
-[CodeSandbox:](https://codesandbox.io/s/react-responsive-nav-3n3lu?file=/src/styles.css:0-542)
-
-<hr/>
 
 # Getting Started with Create React App
 
