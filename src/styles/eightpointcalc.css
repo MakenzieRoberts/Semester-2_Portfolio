@@ -1,0 +1,17 @@
+/* .eight-point-calc {
+	margin: auto;
+} */
+
+#calc-container {
+	padding: 92px;
+
+	position: relative;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+}
