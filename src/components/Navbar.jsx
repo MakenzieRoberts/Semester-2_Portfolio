@@ -1,6 +1,8 @@
 import { useState } from "react";
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "../styles/navbar.css";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Navbar() {
 	const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -13,8 +15,8 @@ export default function Navbar() {
 		//!REFERENCE: https://blog.logrocket.com/create-responsive-navbar-react-css/
 		<nav className="navigation">
 			<div id="nav-container">
-				<a href="/" className="brand-name">
-					Makenzie Roberts
+				<a href="/" className="name">
+					<h1>Makenzie Roberts</h1>
 				</a>
 				<button
 					className="hamburger"
@@ -40,15 +42,64 @@ export default function Navbar() {
 						isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
 					}
 				>
-					<ul onClick={closeMenu}>
+					<ul>
 						<li>
-							<Link to="/">Home</Link>
+							<Link to="/">
+								<ScrollLink
+									onClick={closeMenu}
+									activeClass="active"
+									to="section1"
+									spy={true}
+									smooth={true}
+									offset={-100}
+									duration={900}
+								>
+									Digital Art
+								</ScrollLink>
+							</Link>
 						</li>
 						<li>
-							<Link to="/about">About</Link>
+							<Link to="/">
+								<ScrollLink
+									onClick={closeMenu}
+									activeClass="active"
+									to="section2"
+									spy={true}
+									smooth={true}
+									offset={-100}
+									duration={900}
+								>
+									UI/UX Design
+								</ScrollLink>
+							</Link>
 						</li>
 						<li>
-							<Link to="/contact">Contact</Link>
+							<Link to="/">
+								<ScrollLink
+									activeClass="active"
+									to="section3"
+									spy={true}
+									smooth={true}
+									offset={-100}
+									duration={900}
+								>
+									{"< "}Coding{" >"}
+								</ScrollLink>
+							</Link>
+						</li>
+						<li>
+							<Link to="/">
+								<ScrollLink
+									activeClass="active"
+									to="splash"
+									spy={true}
+									smooth={true}
+									offset={-100}
+									duration={900}
+								>
+									Top ^
+								</ScrollLink>
+							</Link>
 						</li>
 					</ul>
 				</div>
