@@ -123,7 +123,7 @@ iframe {
 	background-color: black;
 	border: 2px solid black;
 	border-radius: 10px;
-	margin: 2.5% auto;
+	margin: 0.2% auto;
 	padding: 2.5%;
 	display: flex;
 	flex-direction: row-reverse;
@@ -132,7 +132,7 @@ iframe {
 	width: 84%;
 }
 #github-logo {
-	padding: 10px;
+	margin: 0 5px;
 }
 
 #github-logo:hover {
@@ -142,6 +142,15 @@ iframe {
 #github > h3 {
 	text-align: left;
 	margin-left: 20px;
+}
+
+#calc {
+	background-color: black;
+	border: 2px solid rgb(235, 235, 235);
+	border-radius: 10px;
+	margin: 0.2% auto;
+	padding: 5.5%;
+	width: 84%;
 }
 
 /* ******************************** Section 4 ******************************* */

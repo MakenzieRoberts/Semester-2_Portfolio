@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../styles/modal.css";
 
+/* ***************** Section 1 (Digital Art) - Modal Effect ***************** */
+
 export default function Modal(props) {
 	const image = props.image;
 	const thumbWidth = props.thumbWidth;

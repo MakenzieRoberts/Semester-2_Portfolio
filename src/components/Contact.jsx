@@ -2,13 +2,15 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/contact.css";
 
+/* ************************* Section 4 Contact Form ************************* */
+
 export const Contact = () => {
 	const form = useRef();
-	const [isActive, setActive] = useState("false");
+	const [isSent, setSent] = useState("false");
 
 	const sendEmail = (e) => {
 		e.preventDefault();
-		setActive(!isActive);
+		setSent(!isSent);
 		emailjs
 			.sendForm(
 				"service_eqkdgho",
@@ -28,20 +30,20 @@ export const Contact = () => {
 
 	return (
 		<>
-			<div className={isActive ? "contact" : "contact-invisible"}>
+			<div className={isSent ? "contact" : "contact-invisible"}>
 				<form ref={form} onSubmit={sendEmail}>
-					<label>Name</label>
+					<label>NAME</label>
 					<input type="text" name="from_name" />
-					<label>Email</label>
+					<label>EMAIL</label>
 					<input type="email" name="from_email" />
-					<label>Message</label>
+					<label>MESSAGE</label>
 					<textarea name="message" />
 					<button type="submit" value="Send">
-						Submit
+						SUBMIT
 					</button>
 				</form>
 			</div>
-			<div className={isActive ? "sent-invisible" : "sent"}>Sent!</div>
+			<div className={isSent ? "sent-invisible" : "sent"}>Sent!</div>
 		</>
 	);
 };

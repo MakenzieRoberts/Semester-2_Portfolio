@@ -2,9 +2,11 @@
 	position: absolute;
 	text-align: center;
 	top: 76%;
+
 	width: 100%;
 	z-index: 0;
 }
+
 .arrow img:hover {
 	scale: 1.1;
 	cursor: pointer;

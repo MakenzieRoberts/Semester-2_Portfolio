@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import "../styles/navbar.css";
 
+/* ***************************** Navigation Bar ***************************** */
+
 export default function Navbar() {
 	const [isNavExpanded, setIsNavExpanded] = useState(false);
 

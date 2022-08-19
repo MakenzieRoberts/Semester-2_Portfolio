@@ -7,38 +7,39 @@
 	height: 100vh;
 	text-align: center;
 }
+
 .fade {
 	position: relative;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
+
 .fade h2 {
 	animation: fadeIn 2s;
 	-webkit-animation: fadeIn 2s;
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 2s; /* Firefox < 16 */
-	-ms-animation: fadein 2s; /* Internet Explorer */
-	-o-animation: fadein 2s; /* Opera < 12.1 */
-	animation: fadein 2s;
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	-ms-animation: fadein 2s;
+	-o-animation: fadein 2s;
 }
+
 .fade p {
 	animation: fadeIn2 5s;
 	-webkit-animation: fadeIn2 5s;
-	-webkit-animation: fadein2 5s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein2 5s; /* Firefox < 16 */
-	-ms-animation: fadein2 5s; /* Internet Explorer */
-	-o-animation: fadein2 5s; /* Opera < 12.1 */
+	-webkit-animation: fadein2 5s;
+	-moz-animation: fadein2 5s;
+	-ms-animation: fadein2 5s;
+	-o-animation: fadein2 5s;
 }
 
 .fade img {
 	border-radius: 50%;
-	animation: fadeIn3 5s;
-	-webkit-animation: fadeIn3 5s;
-	-webkit-animation: fadein3 5s;
-	-moz-animation: fadein3 5s;
-	-ms-animation: fadein3 5s;
-	-o-animation: fadein3 5s;
+	animation: scale 2s infinite, fadein3 5s;
+	-webkit-animation: scale 2s infinite, fadein3 5s;
+	-moz-animation: scale 2s infinite, fadein3 5s;
+	-ms-animation: scale 2s infinite, fadein3 5s;
+	-o-animation: scale 2s infinite, fadein3 5s;
 }
 
 @keyframes fadein {
@@ -54,7 +55,7 @@
 	0% {
 		opacity: 0;
 	}
-	30% {
+	20% {
 		opacity: 0;
 	}
 	100% {
@@ -66,7 +67,7 @@
 	0% {
 		opacity: 0;
 	}
-	70% {
+	50% {
 		opacity: 0;
 	}
 	100% {

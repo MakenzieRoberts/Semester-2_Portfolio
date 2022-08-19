@@ -98,6 +98,7 @@ const Home = () => {
 					<div id="section3-content">
 						<div id="github">
 							<h3>I enjoy contributing to open-source.</h3>
+							<h3>⇦ </h3>
 							<a
 								href="https://github.com/MakenzieRoberts"
 								target="_blank"
@@ -113,12 +114,9 @@ const Home = () => {
 						</div>
 
 						<div id="calc">
-							<h3>
-								{"&"} Sometimes I create little tools to make my life easier.
-							</h3>
+							<h3>{"&"} Creating tools that make my life easier.</h3>
 							<p>
-								Below is a little tool I programmed to make it easier for me to
-								follow the <br />
+								Below is a little program that helps me follow the <br />
 								<a
 									href="https://material.io/design/layout/spacing-methods.html#baseline-grid"
 									target="_blank"

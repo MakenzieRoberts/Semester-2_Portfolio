@@ -2,6 +2,8 @@ import React from "react";
 import DownArrow from "./DownArrow";
 import "../styles/splash.css";
 
+/* ********************** Splash Screen / Introduction ********************** */
+
 const Splash = () => {
 	const bold = { fontWeight: "900" };
 	return (

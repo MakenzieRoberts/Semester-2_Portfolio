@@ -22,7 +22,6 @@ const EightPointCalc = () => {
 	};
 
 	const validate = (value) => {
-		const errorMsg = {};
 		let error = false;
 
 		if (!value.numInput) {
@@ -48,7 +47,10 @@ const EightPointCalc = () => {
 	return (
 		<div className="eight-point-calc">
 			<div id="calc-container">
-				<p style={{ fontWeight: "bold" }}>8-Point Grid System Calculator</p>
+				<p style={{ fontWeight: "bold" }}>
+					8-Point Grid System
+					<br /> Calculator
+				</p>
 				<form id="eight-point-form" onSubmit={handleSubmit}>
 					<input
 						id="num-input"
@@ -59,7 +61,7 @@ const EightPointCalc = () => {
 						onChange={handleChange}
 					/>
 					<button id="submit-button" type="submit">
-						Submit
+						SUBMIT
 					</button>
 				</form>
 				<div id="output-area">
