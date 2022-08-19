@@ -67,6 +67,7 @@ const Home = () => {
 
 							{/* THESE EMBEDS THROW ERRORS IN THE CONSOLE. IT'S NOT ME, IT'S THEM. */}
 							<iframe
+								title="figma"
 								style={{ borderRadius: "10px" }}
 								width="100%"
 								height="500"
@@ -78,6 +79,7 @@ const Home = () => {
 							<h2>({"&"} bring it to life, too!)</h2>
 							{/* THESE EMBEDS THROW ERRORS IN THE CONSOLE. IT'S NOT ME, IT'S THEM. */}
 							<iframe
+								title="codesandbox"
 								style={{ borderRadius: "10px" }}
 								width="100%"
 								height="500"
@@ -92,14 +94,18 @@ const Home = () => {
 
 				<div id="section3" ref={section3} className="section">
 					<h2 style={{ margin: "0" }}>{"&"} Of course, I love to code. </h2>
-					<p>(I mean, I coded this website, after all!)</p>
+					<p>(I coded this website, after all!)</p>
 					<div id="section3-content">
 						<div id="github">
 							<h3>
 								I enjoy to taking on large projects, <br /> and contributing to
 								open-source.
 							</h3>
-							<a href="https://github.com/MakenzieRoberts" target="_blank">
+							<a
+								href="https://github.com/MakenzieRoberts"
+								target="_blank"
+								rel="noreferrer"
+							>
 								<img
 									height="76px"
 									id="github-logo"
@@ -119,12 +125,12 @@ const Home = () => {
 								<a
 									href="https://material.io/design/layout/spacing-methods.html#baseline-grid"
 									target="_blank"
+									rel="noreferrer"
 								>
 									8-Point Grid Design System.
 								</a>
 							</p>
 							<p>
-								{" "}
 								You can enter a number, and it will round that number to the
 								nearest factor of 8. <span style={bold}>Give it a try!</span>
 							</p>

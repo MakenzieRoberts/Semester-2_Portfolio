@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import "../styles/navbar.css";
 

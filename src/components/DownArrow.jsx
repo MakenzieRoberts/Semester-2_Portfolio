@@ -13,7 +13,7 @@ const DownArrow = (props) => {
 				spy={true}
 				smooth={true}
 				offset={-100}
-				duration={2000}
+				duration={1500}
 			>
 				<img height="100" src={downArrow} alt="Down Arrow" />
 			</Link>

@@ -33,7 +33,7 @@ h2 {
 
 #section1 p {
 	font-size: 1rem;
-	color: grey;
+	color: rgb(73, 73, 73);
 }
 
 #image-grid-container {
@@ -113,7 +113,7 @@ iframe {
 
 #section3 > p {
 	padding-bottom: 10px;
-	color: black;
+	color: rgb(73, 73, 73);
 }
 #section3 .arrow {
 	position: relative;

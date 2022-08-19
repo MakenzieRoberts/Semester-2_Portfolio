@@ -39,7 +39,7 @@ export default function Modal(props) {
 							width={fullWidth}
 							height={fullHeight}
 							src={image}
-							alt="Modal image"
+							alt="Modal"
 						/>
 
 						<button className="close-modal" onClick={toggleModal}>
