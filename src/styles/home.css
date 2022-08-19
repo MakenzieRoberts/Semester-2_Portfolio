@@ -131,6 +131,9 @@ iframe {
 	justify-content: center;
 	width: 84%;
 }
+#github-logo {
+	padding: 10px;
+}
 
 #github-logo:hover {
 	scale: 1.1;
@@ -138,7 +141,7 @@ iframe {
 
 #github > h3 {
 	text-align: left;
-	margin: 20px;
+	margin-left: 20px;
 }
 
 /* ******************************** Section 4 ******************************* */

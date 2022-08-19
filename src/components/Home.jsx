@@ -97,10 +97,7 @@ const Home = () => {
 					<p>(I coded this website, after all!)</p>
 					<div id="section3-content">
 						<div id="github">
-							<h3>
-								I enjoy to taking on large projects, <br /> and contributing to
-								open-source.
-							</h3>
+							<h3>I enjoy contributing to open-source.</h3>
 							<a
 								href="https://github.com/MakenzieRoberts"
 								target="_blank"
