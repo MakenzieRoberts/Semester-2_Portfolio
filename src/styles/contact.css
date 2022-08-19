@@ -71,12 +71,12 @@
 	text-align: center;
 	width: 200px;
 
-	animation: fadeIn 4s;
-	-webkit-animation: fadeIn 4s;
-	-webkit-animation: fadein 4s;
-	-moz-animation: fadein 4s;
-	-ms-animation: fadein 4s;
-	-o-animation: fadein 4s;
+	animation: fadeIn 3s;
+	-webkit-animation: fadeIn 3s;
+	-webkit-animation: fadein 3s;
+	-moz-animation: fadein 3s;
+	-ms-animation: fadein 3s;
+	-o-animation: fadein 3s;
 }
 
 @keyframes fadein {
