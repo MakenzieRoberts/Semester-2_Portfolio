@@ -2,8 +2,8 @@
 
 ## Dependencies:
 
-[react-scroll](https://www.npmjs.com/package/react-scroll) <br/>
 [react-router-dom](https://reactrouter.com/docs/en/v6/getting-started/installation) <br/>
+[react-scroll](https://www.npmjs.com/package/react-scroll) <br/>
 [email-js](https://www.emailjs.com/docs/sdk/installation/)
 
 To install, navigate to the project folder in terminal and enter the command:
