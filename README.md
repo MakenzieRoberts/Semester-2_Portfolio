@@ -1,5 +1,13 @@
 # Semester 2: Portfolio Project
 
+## Dependencies:
+
+[react-scroll](https://www.npmjs.com/package/react-scroll) <br/>
+[react-router-dom](https://reactrouter.com/docs/en/v6/getting-started/installation) <br/>
+[email-js](https://www.emailjs.com/docs/sdk/installation/)
+
+To install, navigate to the project folder in terminal and enter the command:
+> npm install
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
