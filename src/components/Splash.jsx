@@ -1,3 +1,6 @@
+// 		Project by: 	Makenzie Roberts
+//		Date Written: 	August 15-19, 2022
+
 import React from "react";
 import DownArrow from "./DownArrow";
 import "../styles/splash.css";

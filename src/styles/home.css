@@ -120,15 +120,15 @@ iframe {
 }
 
 #github {
+	align-items: center;
 	background-color: black;
-	border: 2px solid black;
 	border-radius: 10px;
-	margin: 0.2% auto;
-	padding: 2.5%;
+	border: 2px solid black;
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
 	justify-content: center;
+	margin: 0.2% auto;
+	padding: 2.5%;
 	width: 84%;
 }
 #github-logo {
@@ -146,8 +146,8 @@ iframe {
 
 #calc {
 	background-color: black;
-	border: 2px solid rgb(235, 235, 235);
 	border-radius: 10px;
+	border: 2px solid rgb(235, 235, 235);
 	margin: 0.2% auto;
 	padding: 5.5%;
 	width: 84%;

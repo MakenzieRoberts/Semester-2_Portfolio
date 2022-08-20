@@ -1,9 +1,16 @@
+// 		Project by: 	Makenzie Roberts
+//		Date Written: 	August 15-19, 2022
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import "../styles/navbar.css";
 
-/* ***************************** Navigation Bar ***************************** */
+/* ************************ Responsive Navigation Bar *********************** */
+
+//		!REFERENCE: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+
+//		* This component uses react-scroll to navigate to different sections (https://www.npmjs.com/package/react-scroll)
 
 export default function Navbar() {
 	const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -15,15 +22,19 @@ export default function Navbar() {
 	return (
 		<nav className="navigation">
 			<div id="nav-container">
+				{/* 'Logo' Area */}
 				<a href="/" className="name">
 					<h1>Makenzie Roberts</h1>
 				</a>
+
+				{/* When the menu icon is clicked, toggle isNavExpanded (set to true) */}
 				<button
 					className="hamburger"
 					onClick={() => {
 						setIsNavExpanded(!isNavExpanded);
 					}}
 				>
+					{/* Menu Icon Svg */}
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						className="h-5 w-5"
@@ -37,11 +48,16 @@ export default function Navbar() {
 						/>
 					</svg>
 				</button>
+
+				{/* 
+						This if-statement uses the appropriate className depending on whether isNavExpanded is true
+				*/}
 				<div
 					className={
 						isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
 					}
 				>
+					{/* ********************* Nav Links (using react-scroll) ********************* */}
 					<ul>
 						<li>
 							<Link to="/">

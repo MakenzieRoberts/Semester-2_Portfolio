@@ -1,6 +1,11 @@
+// 		Project by: 	Makenzie Roberts
+//		Date Written: 	August 15-19, 2022
+
 import React from "react";
 import { useState } from "react";
 import "../styles/eightpointcalc.css";
+
+/* ******************** Section 3 (<CODING>) - Calculator ******************* */
 
 const EightPointCalc = () => {
 	const initialValues = { numInput: "" };
@@ -10,17 +15,22 @@ const EightPointCalc = () => {
 	const [formErrors, setFormErrors] = useState({});
 	const [errorMsg, setErrorMsg] = useState("");
 
+	//		This function is called whenever a change is detected in the input.
+	//		When it does, it sets the form value to the current input.
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 
 		setFormValue({ ...formValue, [name]: value });
 	};
 
+	//		When form is submitted, this function calls setFormErrors to validate the input.
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		//		Receives a boolean
 		setFormErrors(validate(formValue));
 	};
 
+	//		Empty Input Validation
 	const validate = (value) => {
 		let error = false;
 
@@ -37,6 +47,7 @@ const EightPointCalc = () => {
 		return error;
 	};
 
+	// Main program: Round input to nearest factor of 8.
 	const roundNum = (value) => {
 		const num = value.numInput;
 		const rounded = Math.round(num / 8) * 8;

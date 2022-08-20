@@ -80,30 +80,30 @@
 	}
 
 	.navigation-menu ul {
-		flex-direction: column;
-		position: absolute;
-		top: 60px;
-		left: 0;
-		width: 100%;
-		height: calc(100vh - 60px);
 		background-color: white;
 		display: none;
+		flex-direction: column;
+		height: calc(100vh - 60px);
+		left: 0;
+		position: absolute;
+		top: 60px;
+		width: 100%;
 	}
 
 	.navigation-menu li {
-		text-align: center;
 		margin: 0;
+		text-align: center;
 	}
 
 	.navigation-menu li a {
 		color: white;
-		width: 100%;
 		padding: 1.5rem 0;
+		width: 100%;
 	}
 
 	.navigation-menu.expanded ul {
-		max-height: fit-content;
 		background-color: black;
 		display: block;
+		max-height: fit-content;
 	}
 }
